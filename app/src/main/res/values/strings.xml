@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CardOOP</string>
+    <string name="newCard">New Card</string>
 </resources>

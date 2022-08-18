@@ -12,8 +12,8 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun flip_card() {
-        val c = Card("ACE", "HEARTS")
+        val c = Card(Ranks.ACE, Suits.HEART)
         c.flip()
-        assertEquals(c.getDetails(), "------")
+        assertEquals(c.getDetails(), "---")
     }
 }

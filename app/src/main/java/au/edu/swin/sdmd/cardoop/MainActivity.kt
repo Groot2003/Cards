@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val c = Card("ACE", "HEARTS")
+        var c = Card()
 
         val rankSuit = findViewById<TextView>(R.id.rank_suit)
         rankSuit.text = c.getDetails()
@@ -21,6 +21,11 @@ class MainActivity : AppCompatActivity() {
             rankSuit.text = c.getDetails()
         }
 
+        val newCard = findViewById<Button>(R.id.newCard)
+        newCard.setOnClickListener {
+            c = Card()
+            rankSuit.text = c.getDetails()
+        }
 
 
     }
